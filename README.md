@@ -14,7 +14,7 @@ modeled as meta information in the CNN layer. CNN consists of an input layer tha
 that extracts features to LSTMs, and several hidden layers.
 
 CNN-LSTM structure:
-<img src="CNN-LSTM-STRUCT.png">
+<img src="images/CNN-LSTM-STRUCT.png">
 
 # Materials:
 
@@ -26,16 +26,20 @@ CNN-LSTM structure:
 * 1 - ZMPT101.B Voltage Sensor
 * 1 - SCT-030 Current Transformer Sensor
 * 1 - Operational Amplifier
+* 1 - 500mA Fuse
 
 # The elecronic circuit for the power meter with the Arduino
 
 Voltage Sensor:
-<img src="images/image.RE7AS0.png">
-Current Sensor:
 <img src="images/image.WO57R0.png">
-General Circuit: 
-<img src="images/image.B7FPS0.png">
 
+Current Sensor:
+<img src="images/image.RE7AS0.png">
+
+General Circuit: 
+<img src="images/circuit.png">
+
+NOTE: Be carefull when you connect the sensors, the author don't take any responsability for any damage.
 # Install the libraries
 ```
 sudo apt-get install numpy pandas pyserial schedule keras
