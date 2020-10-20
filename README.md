@@ -30,13 +30,13 @@ CNN-LSTM structure:
 
 # The elecronic circuit for the power meter with the Arduino
 
-Voltage Sensor:
+* Voltage Sensor:
 <img src="images/image.WO57R0.png">
 
-Current Sensor:
+* Current Sensor:
 <img src="images/image.RE7AS0.png">
 
-General Circuit: 
+* General Circuit: 
 <img src="images/circuit.png">
 
 NOTE: Be carefull when you connect the sensors, the author don't take any responsability for any damage.
