@@ -23,6 +23,7 @@ CNN-LSTM structure:
 * 1 - LCD screen
 * 1 - AC/DC Charger 5v, 4 Amp
 * 1 - Arduino uno
+* 1 - Serial to USB cable
 * 1 - ZMPT101.B Voltage Sensor
 * 1 - SCT-030 Current Transformer Sensor
 * 1 - Operational Amplifier
