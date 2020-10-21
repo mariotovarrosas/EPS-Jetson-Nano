@@ -41,9 +41,19 @@ CNN-LSTM structure:
 <img src="images/circuit.png">
 
 NOTE: Be carefull when you connect the sensors, the author don't take any responsability for any damage.
-# Install the libraries
+# Install Tensorflow in the Jetson Nano
 ```
-sudo apt-get install numpy pandas pyserial schedule keras
+sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev liblapack-dev libblas-dev gfortran
+sudo apt-get install python3-pip
+sudo pip3 install -U pip
+sudo pip3 install -U pip testresources setuptools numpy==1.16.1 future==0.17.1 mock==3.0.5 h5py==2.9.0 keras_preprocessing==1.0.5 keras_applications==1.0.8 gast==0.2.2 futures protobuf pybind11
+
+# TF-2.x
+sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v44 tensorflow==2.3.0+nv20.9
+```
+# Install more libraries
+```
+sudo apt-get install numpy pandas pyserial schedule os datetime scipy sklearn keras
 ```
 # Change permition of the serial port
 ```
@@ -64,6 +74,7 @@ python3 arduino_serial.py
 In other terminal run:
 ```
 cd /EPS-Jetson-Nano/ 
+export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
 python3 neural_training.py
 ```
 Wait to acquire enough data 
