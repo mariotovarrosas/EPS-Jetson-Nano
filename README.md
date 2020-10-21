@@ -77,7 +77,7 @@ cd /EPS-Jetson-Nano/
 export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
 python3 neural_training.py
 ```
-Wait to acquire enough data 
+Wait to acquire enough data, the treaining will start automatically.  
 
-# Final steps:
+# Final steps
 Use "visualize.py" to visualiaze your predictions of the .h5 file saved after the deep learning training.
