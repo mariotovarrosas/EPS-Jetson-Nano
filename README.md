@@ -53,11 +53,11 @@ sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/
 ```
 # Install more libraries
 ```
-sudo apt-get install numpy pandas pyserial schedule os datetime scipy sklearn keras
+sudo pip3 install numpy pandas pyserial schedule matplotlib os datetime scipy sklearn keras
 ```
-# Change permition of the serial port
+# Change permission of the serial port directory
 ```
-sudo chmode 772 /dev/ttyAMC0/ 
+sudo chmod 772 /dev/ttyAMC0/ 
 ```
 # Upload the code
 Connect your Arduino to the Jetson Nano and upload the file: "CONSUME_SERIAL.ino"
