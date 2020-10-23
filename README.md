@@ -7,11 +7,8 @@ The second script, "neural_training.py" is to start the training for the hybrid 
 # The neural network
 CNN-LSTM neural network, which combines convolutional neural network (CNN) and long short-term memory (LSTM), can extract complex features of energy consumption. The CNN layer can extract the features between several variables affecting energy consumption, and the LSTM layer is appropriate for modeling temporal information of irregular trends in time series components. 
 
-The CNN-LSTM method for predicting electric energy consumption consists of a series of connection of CNN and LSTM. CNN-LSTM can extract complex features among multiple sensor variables collected for electric energy demand forecasting and can store complex irregular trends. First, the upper layer of CNN-LSTM con-
-sists of CNN. The CNN layer can receive various variables that affect electric energy consumption such as voltage, intensity, and sub
-metering. In addition, household characteristics such as the date, time, behavior of the residents, and household occupancy can also be
-modeled as meta information in the CNN layer. CNN consists of an input layer that accepts sensor variables as inputs, an output layer
-that extracts features to LSTMs, and several hidden layers.
+The CNN-LSTM method for predicting electric energy consumption consists of a series of connection of CNN and LSTM. CNN-LSTM can extract complex features among multiple sensor variables collected for electric energy demand forecasting and can store complex irregular trends. First, the upper layer of CNN-LSTM consists of a series of convolutional layers. The CNN layer can receive various variables that affect electric energy consumption such as voltage, intensity, and sub
+metering. So, CNN consists of an input layer that accepts sensor variables as inputs, an output layer that extracts features to LSTMs, and several hidden layers.
 
 CNN-LSTM structure:
 <img src="images/CNN-LSTM-STRUCT.png">
