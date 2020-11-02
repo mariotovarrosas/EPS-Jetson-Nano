@@ -23,7 +23,7 @@ CNN-LSTM structure:
 * 1 - Serial to USB cable
 * 1 - ZMPT101.B Voltage Sensor
 * 1 - SCT-030 Current Transformer Sensor
-* 1 - Operational Amplifier
+* 1 - Operational Amplifier LM32
 * 1 - 500mA Fuse
 
 # The elecronic circuit for the power meter with the Arduino
