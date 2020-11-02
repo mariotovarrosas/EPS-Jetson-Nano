@@ -37,6 +37,10 @@ CNN-LSTM structure:
 * General Circuit: 
 <img src="images/circuit.png">
 
+* PCB: 
+<img src="images/pcb.png">
+Download pcb.fzz to get the fritzzing file for pcb production.
+
 NOTE: Be carefull when you connect the sensors, the author don't take any responsability for any damage.
 # Install Tensorflow in the Jetson Nano
 ```
