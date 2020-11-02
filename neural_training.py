@@ -119,9 +119,9 @@ def train_func():
 
     model.add(Conv1D(filters=64, kernel_size=3, strides=1, padding='same', activation='relu'))
     #model.add(MaxPooling1D(pool_size=2, strides=2))
-    model.add(Conv1D(filters=128, kernel_size=3, strides=1, padding='same', activation='relu'))
+    #model.add(Conv1D(filters=128, kernel_size=3, strides=1, padding='same', activation='relu'))
     #model.add(MaxPooling1D(pool_size=2, strides=2))
-    model.add(Conv1D(filters=256, kernel_size=3, strides=1, padding='same', activation='relu'))
+    #model.add(Conv1D(filters=256, kernel_size=3, strides=1, padding='same', activation='relu'))
     #model.add(MaxPooling1D(pool_size=2, strides=2))
     model.add(Conv1D(filters=128, kernel_size=3, strides=1, padding='same', activation='relu'))
     #model.add(MaxPooling1D(pool_size=2, strides=2))
@@ -130,17 +130,17 @@ def train_func():
 
     model.add(LSTM(64, return_sequences=True))
     model.add(LSTM(128, return_sequences=True))
-    model.add(LSTM(256, return_sequences=True))
-    model.add(LSTM(128, return_sequences=True))
+    #model.add(LSTM(256, return_sequences=True))
+    #model.add(LSTM(128, return_sequences=True))
     model.add(LSTM(64, return_sequences=True))
     model.add(LSTM(n_feats, return_sequences=True))
 
-    #model.add(Dropout(0.2))
+    model.add(Dropout(0.1))
     #model.add(Flatten())
     #model.add(Dense(n_feats))
     time_callback = TimeHistory()
     model.compile(loss='mse', optimizer='adam')
-    model.fit(x_train, y_train, epochs=1000, batch_size=1, verbose=2)
+    model.fit(x_train, y_train, epochs=600, batch_size=16, verbose=2)
     times = time_callback.times
     model.save('NN_'+str(today)+'W'+str(week)+'.h5')
     print("Training finished")
