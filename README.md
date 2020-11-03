@@ -17,7 +17,7 @@ CNN-LSTM structure:
 
 * 1 - Jetson-Nano Developer Kit from Nvidia
 * 1 - HDMI cable
-* 1 - LCD screen
+* 1 - 7 inch LCD screen
 * 1 - AC/DC Charger 5v, 4 Amp
 * 1 - Arduino uno
 * 1 - Serial to USB cable
@@ -39,7 +39,11 @@ CNN-LSTM structure:
 
 * PCB: 
 <img src="images/pcb.png">
+<img src="images/smart_meter2.png">
 Download pcb.fzz to get the fritzzing file for pcb production.
+
+* Power Meter: 
+<img src="images/smart_meter1.png">
 
 NOTE: Be carefull when you connect the sensors, the author don't take any responsability for any damage.
 # Install Tensorflow in the Jetson Nano
