@@ -39,11 +39,11 @@ CNN-LSTM structure:
 
 * PCB: 
 <img src="images/pcb.png">
-<img src="images/smart_meter2.jpg">
+<img src="images/smart_meter1.jpg">
 Download pcb.fzz to get the fritzzing file for pcb production.
 
 * Power Meter: 
-<img src="images/smart_meter1.jpg">
+<img src="images/smart_meter2.jpg">
 
 NOTE: Be carefull when you connect the sensors, the author don't take any responsability for any damage.
 # Install Tensorflow in the Jetson Nano
