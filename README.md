@@ -86,3 +86,5 @@ Wait to acquire enough data, the training will start automatically.
 
 # Final steps
 Use "visualize.py" to visualiaze your predictions of the .h5 file saved after the deep learning training.
+<img src="images/predict.png">
+<img src="images/predict2.jpg">
